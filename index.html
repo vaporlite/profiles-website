@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wirescan - accessing system...</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="matrix-bg"></div>
+    <div class="cursor"></div>
+    <div class="scanline"></div>
+    
+    <div class="container">
+        <div class="logo glitch" data-text="wirescan">wirescan</div>
+        <div class="loading-text" id="loadingText">initializing system...</div>
+        
+        <div class="loading-bar">
+            <div class="loading-progress" id="loadingProgress"></div>
+        </div>
+        
+        <div class="terminal" id="terminal">
+            <div class="terminal-line" style="animation-delay: 0.5s;">
+                <span class="terminal-prompt">root@wirescan:~$ </span>
+                <span class="terminal-output">connecting to neural network...</span>
+            </div>
+            <div class="terminal-line" style="animation-delay: 1s;">
+                <span class="terminal-output">establishing secure connection...</span>
+            </div>
+            <div class="terminal-line" style="animation-delay: 1.5s;">
+                <span class="terminal-output">loading user profile...</span>
+            </div>
+            <div class="terminal-line" style="animation-delay: 2s;">
+                <span class="terminal-output">decrypting data stream...</span>
+            </div>
+            <div class="terminal-line" style="animation-delay: 2.5s;">
+                <span class="terminal-success">connection established ✓</span>
+            </div>
+            <div class="terminal-line" style="animation-delay: 3s;">
+                <span class="terminal-prompt">root@wirescan:~$ </span>
+                <span class="terminal-cursor">_</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="click-hint">click anywhere to access profile</div>
+    
+    <script src="scripts/index.js"></script>
+</body>
+</html>
